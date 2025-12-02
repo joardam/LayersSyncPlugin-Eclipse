@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <!-- Registra a Categoria da View (opcional, mas organizado) -->
+   <extension point="org.eclipse.ui.views">
+      <category
+            id="br.com.layersyncplugin.category"
+            name="Layer Sync Tools">
+      </category>
+      
+      <!-- Registra a View propriamente dita -->
+      <view
+            id="br.com.layersyncplugin.views.LayerSyncView"
+            name="Layer Sync Generator"
+            class="br.com.layersyncplugin.views.LayerSyncView"
+            category="br.com.layersyncplugin.category"
+            restorable="true">
+      </view>
+   </extension>
+
+</plugin>
